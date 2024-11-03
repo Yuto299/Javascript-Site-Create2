@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>複数の条件を組み合わせられる論理演算子</title>
+</head>
+<body>
+    <script>
+        const hour = 9;
+
+        // 9時から12時までは「モーニング会員」
+        if(hour >= 9 && hour < 12){
+            console.log('モーニング会員');
+        }
+
+        // 8時、または23時であれば「早朝＆夜間会員」
+        if(hour === 8 || hour === 23){
+            console.log('早朝＆夜間会員');
+        }
+    </script>
+</body>
+</html>
